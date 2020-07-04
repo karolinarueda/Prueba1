@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PRUEBA4.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Micolor">Black</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Color x:Key="Micolor">Gray</Color>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <BoxView Color="{StaticResource Micolor}"/>
+
+        <StackLayout>
+           
+            <Entry Text="PLATAFORMA DE KADODINA" TextColor="White"/>
+            <Label Text="Welcome to Xamarin.Forms!" 
+           FontSize="15"
+           FontFamily="Segoe UI Linght"
+           TextColor="AntiqueWhite" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+            <Button>
+                <Button.Text>INICIAR SESION</Button.Text>
+                <Button.TextColor>Blue</Button.TextColor>
+                <Button.FontSize>15</Button.FontSize>
+            </Button>
+        </StackLayout>
+        <!--  <BoxView Color="{StaticResource Micolor}"/>
+    -->
+    </Grid>
+</ContentPage>
